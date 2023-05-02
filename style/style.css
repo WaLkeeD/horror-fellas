@@ -1,0 +1,920 @@
+@import url(fonts.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: "Hauora";
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* *************** HEADER **************** */
+
+.header {
+    overflow-x: hidden;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__link {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #636363;
+    transition: 0.5s;
+}
+
+.header__link:hover {
+    color: #cd3939;
+}
+
+.header__button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #ffffff;
+
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.header__button:hover {
+    color: #cd3939;
+    border-color: #cd3939;
+}
+
+.header__ad {
+    background: #cd3939;
+    border-radius: 14px;
+    padding: 17px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__ad-title {
+    font-family: "Hauora";
+    font-style: normal;
+    max-width: 420px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #ffffff;
+}
+
+.header__ad-button {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #cd3939;
+
+    padding: 15px 30px;
+    background-color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 11px;
+    transition: 0.5s;
+}
+
+.header__ad-button:hover {
+    background-color: black;
+    border-color: #fff;
+    color: #fff;
+}
+
+.header__intro {
+    max-width: 1440px;
+    margin: 30px auto;
+    display: flex;
+    background: url(../img/intro-img.png);
+    background-position: 510px -140px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.header__intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #fff;
+
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.header__intro-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    max-width: 620px;
+    width: 100%;
+
+    font-size: 74px;
+    line-height: 101.5%;
+}
+
+.header__intro-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    max-width: 475px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+
+    color: #ffffff;
+}
+
+.header__intro-button {
+    font-family: "Hauora";
+    font-style: normal;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px 15px;
+    width: 300px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    background: #cd3939;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 11px;
+
+    color: #ffffff;
+}
+
+.header__intro-text-small {
+    font-family: "Montserrat";
+    font-style: normal;
+    max-width: 470px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.header__intro-img {
+    z-index: -1;
+    background: url(img/header-img.svg) center center / cover no-repeat;
+    position: absolute;
+    max-width: 1102px;
+    width: 100%;
+    height: 695px;
+    left: 310px;
+    top: 108px;
+}
+
+/* ********** MINT ************* */
+
+.mint {
+    display: flex;
+    background: url(img/door.png) center center / cover no-repeat;
+
+    height: 900px;
+    margin: 35px 0 50px;
+}
+
+.mint__block {
+    display: flex;
+    gap: 10px;
+
+    background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
+    border-radius: 12px;
+
+    max-width: 1080px;
+    width: 100%;
+    max-height: 480px;
+    height: 100%;
+
+    margin-bottom: 90px;
+}
+
+.mint__block-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.mint__block-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 114%;
+
+    color: #ffffff;
+
+    padding-top: 65px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.mint__block-text {
+    font-family: "Hauora";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.mint__block-content-cont {
+    display: flex;
+    gap: 60px;
+}
+
+.mint__block-content-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.mint__block-content-subtitle {
+    font-family: "Hauora";
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+
+    color: #ffffff;
+}
+
+.mint__block-content-info {
+    font-family: "Hauora";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0 20px;
+
+    color: #ffffff;
+}
+
+.mint__block-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mint__block-content-item {
+    display: flex;
+    gap: 10px;
+}
+
+.mint__block-content-item p {
+    font-family: "Hauora";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #ffffff;
+}
+
+.mint__block-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mint__btn {
+    font-family: "Hauora";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #fd5252;
+    background: rgba(205, 57, 57, 0.1);
+    border-radius: 42px;
+
+    padding: 15px 30px;
+    width: 120px;
+    transition: 0.4s;
+}
+
+.mint__btn:hover {
+    color: red;
+    background-color: #fff;
+}
+
+.mint__button {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: #ffffff;
+
+    background: #ce0101;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 11.8246px;
+    padding: 15px 70px;
+    transition: 0.4s;
+}
+
+.mint__button:hover {
+    color: red;
+    background-color: #fff;
+}
+
+/* ********* MINT-INFO ********** */
+
+.mint__info {
+    display: flex;
+    gap: 35px;
+    align-items: baseline;
+}
+
+.mint__info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mint__info-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.icon {
+    padding: 12px 45px;
+    width: 114px;
+    background: rgba(205, 57, 57, 0.2);
+    border-radius: 42px;
+}
+
+.mint__info-title {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+
+    letter-spacing: -0.015em;
+
+    color: #ffffff;
+    opacity: 0.64;
+
+    margin: 22px 0;
+}
+
+.mint__info-text {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    opacity: 0.64;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.big {
+    max-width: 400px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.white {
+    opacity: 1;
+}
+
+.mint__socials {
+    display: flex;
+    gap: 18px;
+}
+
+/* ******* SWIPER ******** */
+
+.slider {
+    margin-bottom: 245px;
+}
+
+.swiper {
+    padding: 20px;
+    max-height: 430px;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.swiper-slide {
+    /* padding: 50px; */
+    padding-bottom: 20px;
+
+    max-width: 340px;
+    max-height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide-box {
+    display: flex;
+    gap: 12px;
+    padding: 20px 0 20px 20px;
+}
+
+.swiper-slide-box img {
+    width: 18px;
+    height: 18px;
+}
+
+.swiper-slide-box-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #ffffff;
+}
+
+.swiper-slide-box-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 20px;
+
+    color: #ffffff;
+}
+
+.slider__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 215.5%;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ****** RED ******* */
+
+.red {
+    margin-bottom: 75px;
+}
+.red__container {
+    display: flex;
+    gap: 30px;
+
+    background: #cd3939;
+    border-radius: 25px;
+    padding: 30px;
+}
+.red__left {
+    display: flex;
+    flex-direction: column;
+}
+.red__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 117.5%;
+
+    max-width: 590px;
+    width: 100%;
+
+    color: #ffffff;
+}
+.red__subtitle {
+    max-width: 400px;
+    width: 100%;
+
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 20px 0 50px;
+
+    color: #ffffff;
+}
+.red__info-box {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.red__info-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 190px;
+    max-height: 80px;
+    width: 100%;
+    height: 100%;
+}
+.red__number {
+    font-family: "Hauora";
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 32px;
+
+    color: #ffffff;
+}
+.red__info-box-text {
+    font-family: "Hauora";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+
+    color: #ffffff;
+}
+.red__right {
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
+    border-radius: 15px;
+    overflow: hidden;
+
+    max-width: 450px;
+    max-height: 555px;
+    width: 100%;
+    height: 100%;
+}
+.red-box {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+.red-box-box-title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #ffffff;
+}
+.red-box-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #ffffff;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* ****** FUSION ******* */
+
+.fusion {
+    margin-bottom: 90px;
+}
+.fusion .container {
+    display: flex;
+    gap: 60px;
+}
+
+.fusion__box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.fusion__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 117.5%;
+
+    max-width: 510px;
+    width: 100%;
+
+    color: #ffffff;
+}
+.fusion__btn {
+    padding: 16px 0;
+    font-family: "Hauora";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #ffffff;
+    background: #cd3939;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 11px;
+    max-width: 173px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.fusion__btn:hover {
+    background-color: #fff;
+    color: red;
+}
+.fusion__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+
+    max-width: 540px;
+    width: 100%;
+
+    color: #ffffff;
+}
+
+/* ****** FAQ ****** */
+
+.faq {
+    margin-bottom: 60px;
+}
+.faq__title {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 215.5%;
+
+    color: #ffffff;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.faq__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq__left,
+.faq__right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.faq__item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 540px;
+    width: 100%;
+    gap: 35px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.faq__text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+}
+
+/* ****** ACCORDION ******* */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion-box {
+    margin-bottom: 60px;
+}
+
+.accordion__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 215.5%;
+    /* identical to box height, or 121px */
+
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.accordion-box .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.accordion__left,
+.accordion__right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.accordion {
+    background-color: #010101;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+
+    padding-bottom: 20px;
+
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    transition: 0.3s;
+
+    border: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.accordion__item {
+    background-color: #010101;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    /* background-color: #fff; */
+    color: red;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+}
+
+.accordion:after {
+    content: url(../icons/plus.svg); /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.screenshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/* ***** MAP ***** */
+
+.map {
+    margin-bottom: 100px;
+}
+
+.map .container {
+    background: #cd3939;
+    border-radius: 25px;
+    padding: 30px;
+}
+.map__container {
+    display: flex;
+    gap: 10px;
+}
+
+.map__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 117.5%;
+    /* identical to box height, or 66px */
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: #ffffff;
+}
+.map__left {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+}
+.map__item {
+    display: flex;
+    flex-direction: column;
+}
+.phase {
+    font-family: "Hauora";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+
+    color: #ffffff;
+
+    opacity: 0.4;
+}
+.map__heading {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 118% */
+
+    color: #ffffff;
+    margin: 10px 0 25px;
+}
+.map__text-m {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 147% */
+
+    color: #ffffff;
+}
+.map__text-s {
+    font-family: "Hauora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 230px;
+    width: 100%;
+    /* or 146% */
+
+    color: #ffffff;
+}
+.map__percents {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.map__percent {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.map__right {
+}
