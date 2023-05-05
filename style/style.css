@@ -216,7 +216,7 @@ body {
 
 .mint {
   display: flex;
-  background: url(img/door.png) center center / cover no-repeat;
+  background: url(../img/door.png) center center / cover no-repeat;
 
   max-height: 900px;
   height: 100%;
