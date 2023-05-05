@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/fonts.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/media.css" />
+
     <title>Horror Fellas</title>
   </head>
 
@@ -67,7 +68,7 @@
           <div class="mint__block">
             <img src="img/mint-img.png" alt="mint" class="mint__img" />
             <div class="mint__block-content">
-              <h2 class="mint__block-title">Mint a Horror Fellow</h2>
+              <h2 class="mint__block-title title">Mint a Horror Fellow</h2>
               <p class="mint__block-text">
                 Mint a Soul Sol by connecting your Solana Sollet or Phantom
                 wallet.
@@ -124,13 +125,53 @@
               </p>
               <div class="mint__socials">
                 <a href="#">
-                  <img src="icons/twitch-icon.svg" alt="" />
+                  <svg
+                    width="22"
+                    height="22"
+                    viewbox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.547 0L0 3.776V19.209H5.5V22H8.593L11.515 19.209H15.985L22 13.462V0H1.547ZM19.937 12.478L16.499 15.761H11L8.078 18.552V15.762H3.438V1.97H19.937V12.478ZM16.499 5.747V11.487H14.437V5.747H16.5H16.499ZM11 5.747V11.487H8.938V5.747H11Z"
+                      fill="white"
+                      fill-opacity="0.45"
+                    />
+                  </svg>
                 </a>
                 <a href="#">
-                  <img src="icons/tg-icon.svg" alt="" />
+                  <svg
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5285 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859Z"
+                      fill="white"
+                      fill-opacity="0.45"
+                    />
+                  </svg>
                 </a>
                 <a href="#">
-                  <img src="icons/twitter-icon.svg" alt="" />
+                  <svg
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0.47998C5.63758 0.47998 0.47998 5.63758 0.47998 12C0.47998 18.3624 5.63758 23.52 12 23.52C18.3624 23.52 23.52 18.3624 23.52 12C23.52 5.63758 18.3624 0.47998 12 0.47998ZM16.686 9.91678C16.6908 10.0152 16.692 10.1136 16.692 10.2096C16.692 13.2096 14.4108 16.6668 10.2372 16.6668C9.00393 16.6688 7.79634 16.3146 6.75958 15.6468C6.93598 15.6684 7.11718 15.6768 7.30078 15.6768C8.36398 15.6768 9.34198 15.3156 10.1184 14.706C9.64524 14.6967 9.18679 14.54 8.80691 14.2578C8.42704 13.9756 8.14468 13.5819 7.99918 13.1316C8.33897 13.1962 8.689 13.1827 9.02278 13.092C8.50924 12.9881 8.04742 12.7099 7.71563 12.3044C7.38384 11.8989 7.20251 11.3911 7.20238 10.8672V10.8396C7.50838 11.0088 7.85878 11.112 8.23078 11.124C7.74934 10.8035 7.40852 10.3112 7.27803 9.74774C7.14755 9.18429 7.23724 8.59228 7.52878 8.09278C8.09873 8.79358 8.80949 9.36688 9.61506 9.77555C10.4206 10.1842 11.303 10.4192 12.2052 10.4652C12.0905 9.97835 12.1399 9.46727 12.3456 9.01139C12.5513 8.5555 12.9019 8.18037 13.3429 7.9443C13.7838 7.70823 14.2904 7.62445 14.7839 7.70599C15.2773 7.78753 15.73 8.02981 16.0716 8.39518C16.5794 8.29471 17.0664 8.10845 17.5116 7.84438C17.3423 8.37014 16.988 8.81659 16.5144 9.10078C16.9642 9.0466 17.4034 8.92567 17.8176 8.74198C17.5134 9.19785 17.1301 9.59571 16.686 9.91678Z"
+                      fill="white"
+                      fill-opacity="0.45"
+                    />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -139,7 +180,7 @@
       </section>
 
       <section class="slider">
-        <h2 class="slider__title">Discover Horror Fellow</h2>
+        <h2 class="slider__title title">Discover Horror Fellow</h2>
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -229,8 +270,10 @@
           <div class="swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
 
           <!-- If we need scrollbar -->
           <div class="swiper-scrollbar"></div>
@@ -240,7 +283,7 @@
       <section class="red">
         <div class="red__container container">
           <div class="red__left">
-            <h2 class="red__title">
+            <h2 class="red__title title">
               Cryptographically Signed & Staked with Proof of Ownership
             </h2>
             <p class="red__subtitle">
@@ -280,7 +323,7 @@
       <section class="fusion">
         <div class="container">
           <div class="fusion__box">
-            <h2 class="fusion__title">Soul NFT FUSION</h2>
+            <h2 class="fusion__title title">Soul NFT FUSION</h2>
             <a href="#" class="fusion__btn">See road map</a>
           </div>
           <p class="fusion__text">
@@ -292,7 +335,7 @@
       </section>
 
       <section class="accordion-box">
-        <h2 class="accordion__title">Frequently Asked Questions</h2>
+        <h2 class="accordion__title title">Frequently Asked Questions</h2>
         <div class="container">
           <div class="accordion__left">
             <div class="accordion__item">
@@ -367,13 +410,13 @@
         </div>
       </section>
 
-      <section class="screenshot">
+      <section class="screenshot container">
         <img src="icons/screenshot.png" alt="" />
       </section>
 
       <section class="map">
         <div class="container">
-          <h2 class="map__title">Road Map</h2>
+          <h2 class="map__title title">Road Map</h2>
           <div class="map__container">
             <div class="map__left">
               <div class="img-box">
@@ -499,13 +542,53 @@
           <h4 class="footer__subtitle">Community</h4>
           <div class="mint__socials">
             <a href="#">
-              <img src="icons/twitch-icon.svg" alt="" />
+              <svg
+                width="22"
+                height="22"
+                viewbox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.547 0L0 3.776V19.209H5.5V22H8.593L11.515 19.209H15.985L22 13.462V0H1.547ZM19.937 12.478L16.499 15.761H11L8.078 18.552V15.762H3.438V1.97H19.937V12.478ZM16.499 5.747V11.487H14.437V5.747H16.5H16.499ZM11 5.747V11.487H8.938V5.747H11Z"
+                  fill="white"
+                  fill-opacity="0.45"
+                />
+              </svg>
             </a>
             <a href="#">
-              <img src="icons/tg-icon.svg" alt="" />
+              <svg
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12ZM12.43 8.859C11.263 9.344 8.93 10.349 5.432 11.873C4.864 12.099 4.566 12.32 4.539 12.536C4.493 12.902 4.951 13.046 5.573 13.241C5.658 13.268 5.746 13.295 5.836 13.325C6.449 13.524 7.273 13.757 7.701 13.766C8.09 13.774 8.524 13.614 9.003 13.286C12.271 11.079 13.958 9.964 14.064 9.94C14.139 9.923 14.243 9.901 14.313 9.964C14.383 10.026 14.376 10.144 14.369 10.176C14.323 10.369 12.529 12.038 11.599 12.902C11.309 13.171 11.104 13.362 11.062 13.406C10.968 13.503 10.872 13.596 10.78 13.685C10.21 14.233 9.784 14.645 10.804 15.317C11.294 15.64 11.686 15.907 12.077 16.173C12.504 16.464 12.93 16.754 13.482 17.116C13.622 17.208 13.756 17.303 13.887 17.396C14.384 17.751 14.831 18.069 15.383 18.019C15.703 17.989 16.035 17.688 16.203 16.789C16.6 14.663 17.382 10.059 17.563 8.161C17.574 8.00341 17.5673 7.84509 17.543 7.689C17.5285 7.56293 17.4671 7.44693 17.371 7.364C17.228 7.247 17.006 7.222 16.906 7.224C16.455 7.232 15.763 7.473 12.43 8.859Z"
+                  fill="white"
+                  fill-opacity="0.45"
+                />
+              </svg>
             </a>
             <a href="#">
-              <img src="icons/twitter-icon.svg" alt="" />
+              <svg
+                width="24"
+                height="24"
+                viewbox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 0.47998C5.63758 0.47998 0.47998 5.63758 0.47998 12C0.47998 18.3624 5.63758 23.52 12 23.52C18.3624 23.52 23.52 18.3624 23.52 12C23.52 5.63758 18.3624 0.47998 12 0.47998ZM16.686 9.91678C16.6908 10.0152 16.692 10.1136 16.692 10.2096C16.692 13.2096 14.4108 16.6668 10.2372 16.6668C9.00393 16.6688 7.79634 16.3146 6.75958 15.6468C6.93598 15.6684 7.11718 15.6768 7.30078 15.6768C8.36398 15.6768 9.34198 15.3156 10.1184 14.706C9.64524 14.6967 9.18679 14.54 8.80691 14.2578C8.42704 13.9756 8.14468 13.5819 7.99918 13.1316C8.33897 13.1962 8.689 13.1827 9.02278 13.092C8.50924 12.9881 8.04742 12.7099 7.71563 12.3044C7.38384 11.8989 7.20251 11.3911 7.20238 10.8672V10.8396C7.50838 11.0088 7.85878 11.112 8.23078 11.124C7.74934 10.8035 7.40852 10.3112 7.27803 9.74774C7.14755 9.18429 7.23724 8.59228 7.52878 8.09278C8.09873 8.79358 8.80949 9.36688 9.61506 9.77555C10.4206 10.1842 11.303 10.4192 12.2052 10.4652C12.0905 9.97835 12.1399 9.46727 12.3456 9.01139C12.5513 8.5555 12.9019 8.18037 13.3429 7.9443C13.7838 7.70823 14.2904 7.62445 14.7839 7.70599C15.2773 7.78753 15.73 8.02981 16.0716 8.39518C16.5794 8.29471 17.0664 8.10845 17.5116 7.84438C17.3423 8.37014 16.988 8.81659 16.5144 9.10078C16.9642 9.0466 17.4034 8.92567 17.8176 8.74198C17.5134 9.19785 17.1301 9.59571 16.686 9.91678Z"
+                  fill="white"
+                  fill-opacity="0.45"
+                />
+              </svg>
             </a>
           </div>
         </div>

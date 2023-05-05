@@ -18,6 +18,7 @@ body {
   background-color: black;
   font-family: "Hauora";
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .container {
@@ -47,7 +48,6 @@ body {
 
 .header__link {
   font-family: "Hauora";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -86,6 +86,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  max-width: 1110px;
+  width: 100%;
 }
 
 .header__ad-title {
@@ -166,7 +169,6 @@ body {
 
 .header__intro-button {
   font-family: "Hauora";
-  font-style: normal;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -185,8 +187,8 @@ body {
 }
 
 .header__intro-button:hover {
-    color: white;
-    background-color: brown;
+  color: white;
+  background-color: brown;
 }
 
 .header__intro-text-small {
@@ -216,7 +218,8 @@ body {
   display: flex;
   background: url(img/door.png) center center / cover no-repeat;
 
-  height: 900px;
+  max-height: 900px;
+  height: 100%;
   margin: 35px 0 50px;
 }
 
@@ -227,10 +230,10 @@ body {
   background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
   border-radius: 12px;
 
-  max-width: 1080px;
+  /* max-width: 1080px;
   width: 100%;
   max-height: 480px;
-  height: 100%;
+  height: 100%; */
 
   margin-bottom: 90px;
 }
@@ -341,7 +344,6 @@ body {
 
 .mint__button {
   font-family: "Hauora";
-  font-style: normal;
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
@@ -392,6 +394,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 
   letter-spacing: -0.015em;
 
@@ -403,7 +406,6 @@ body {
 
 .mint__info-text {
   font-family: "Hauora";
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 32px;
@@ -433,19 +435,74 @@ body {
   gap: 18px;
 }
 
+svg path {
+  transition: .2s;
+}
+
+.mint__socials a:hover svg path {
+  fill: red;
+  fill-opacity: 1;
+}
+
 /* ******* SWIPER ******** */
 
 .slider {
-  margin-bottom: 245px;
+  margin-bottom: 100px;
   transition: 0.4s;
+
 }
 
 .swiper {
   padding: 20px;
-  max-height: 430px;
-
+  max-height: 600px;
+  height: 100%;
   transition: 0.4s;
 }
+
+.swiper-buttons {
+  display: flex;
+  position: relative;
+  max-width: 200px;
+  width: 100%;
+  margin: 70px auto 0;
+  padding: 40px;
+  /* background-color: #fd5252; */
+}
+
+.swiper-button-prev {
+  background: rgba(236, 1, 1, 0.28);
+  border-radius: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-button-next {
+  background: rgba(236, 1, 1, 0.28);
+  /* background-image: url(../icons/blood-arrow.svg); */
+  overflow: visible;
+  border-radius: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-button-prev:hover {
+  background-color: red;
+}
+.swiper-button-next:hover {
+  background-color: red;
+}
+
+
 
 .swiper-slide {
   /* padding: 50px; */
@@ -455,8 +512,7 @@ body {
   max-height: 430px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 
   background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
   border-radius: 12px;
@@ -505,6 +561,8 @@ body {
   text-align: center;
   color: #ffffff;
 }
+
+
 
 /* ****** RED ******* */
 
@@ -854,6 +912,10 @@ body {
   margin-bottom: 60px;
 }
 
+.screenshot img {
+  width: 100%;
+}
+
 /* ***** MAP ***** */
 
 .map {
@@ -990,7 +1052,6 @@ body {
 
   font-family: "Hauora";
   font-weight: 700;
-  font-size: 20px;
   line-height: 24px;
 }
 
@@ -1013,6 +1074,7 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
 .footer__subtitle {
   font-family: "Hauora";
   font-weight: 700;
@@ -1021,6 +1083,7 @@ body {
 
   color: #ffffff;
 }
+
 .footer__text {
   font-family: "Hauora";
   font-weight: 400;
@@ -1032,6 +1095,7 @@ body {
   max-width: 250px;
   width: 100%;
 }
+
 .footer__mail {
   font-family: "Hauora";
   font-style: normal;
@@ -1046,6 +1110,7 @@ body {
 .footer__mail:hover {
   color: white;
 }
+
 .footer__list {
   display: flex;
   flex-direction: column;
@@ -1066,6 +1131,7 @@ body {
 .footer__list li a:hover {
   color: red;
 }
+
 .footer__link {
   font-family: "Hauora";
   font-weight: 400;
@@ -1077,7 +1143,7 @@ body {
 }
 
 .footer__link:hover {
-    color: white;
+  color: white;
 }
 
 .copyright {

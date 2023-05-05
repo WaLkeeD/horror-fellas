@@ -1,0 +1,162 @@
+@media (max-width: 1200px) {
+    .header__intro {
+        background-position: 370px -140px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .header__intro {
+        background-position: 170px -140px;
+    }
+
+    .header__intro-title {
+        max-width: 500px;
+        font-size: 65px;
+    }
+
+    .header__intro-text {
+        font-size: 18px;
+    }
+
+    .mint {
+        max-height: 970px;
+    }
+
+    .mint__block-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    
+
+    .mint__block-content-subtitle {
+        font-size: 30px;
+    }
+
+    .mint__block-content-info {
+        font-size: 15px;
+    }
+
+    .mint__block-content-item p {
+        font-size: 13px;
+    }
+
+    .mint__block-content-right {
+        gap: 40px;
+    }
+
+    .mint__block {
+        padding: 10px 10px 0 0;
+    }
+
+    .mint__info-item {
+        gap: 20px;
+    }
+
+    .mint__block-content-cont {
+        gap: 30px;
+    }
+
+    .mint__button {
+        padding: 15px 60px;
+    }
+
+    .slider {
+        margin-bottom: 50px;
+    }
+
+    .swiper-slide-box-title {
+        font-size: 15px;
+    }
+
+    .swiper-slide-box {
+        padding: 15px;
+    }
+
+    .red__info-box {
+        gap: 35px;
+    }
+
+    .accordion {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header__intro {
+        background: none;
+    }
+
+    .header__intro-content {
+        align-items: center;
+        position: relative;
+    }
+
+    .header__intro::after {
+        content: url(../img/intro-img.png);
+        position: absolute;
+        display: block;
+        top: 100px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .header__intro {
+        margin: 30px auto 440px;
+    }
+
+    .header__intro::after {
+        top: 575px;
+        left: -110px;
+    }
+
+    .header__nav-list {
+        gap: 15px;
+    }
+
+    .header__link {
+        font-size: 12px;
+    }
+
+    .header__intro::after {
+        top: 600px;
+        left: -100px;
+    }
+    
+    .mint__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mint__block {
+        flex-direction: column;
+    }
+    
+    .slider {
+        margin-top: 675px;
+    }
+    
+    .mint__block-content {
+        align-items: center;
+    }
+    
+    .mint__img {
+        width: 80%;
+    }
+    
+    .mint__block {
+        align-items: center;
+    }
+    
+    .header__intro::after {
+        max-width: 700px;
+    }
+}
