@@ -221,6 +221,7 @@
 
     .title {
         font-size: 32px;
+
     }
 
     .mint__block-content-subtitle {
@@ -268,5 +269,82 @@
         top: 1425px;
         left: 0px;
         z-index: -1;
+    }
+
+    .red__container {
+        flex-direction: column;
+    }
+
+    .red__info-box {
+        justify-content: center;
+    }
+
+    .fusion .container {
+        flex-direction: column;
+    }
+
+    .red__info-box-content {
+        max-width: 160px;
+    }
+
+    .red__info-box {
+        flex-wrap: wrap;
+    }
+
+    .red__number {
+        font-size: 38px;
+    }
+
+    .red__info-box-text {
+        font-size: 15px;
+    }
+
+    .fusion .container {
+        flex-direction: column;
+    }
+
+    .fusion__box {
+        gap: 30px;
+    }
+
+    .accordion-box .container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .accordion__title {
+        text-align: left;
+        line-height: 147%;
+    }
+
+    .map__container {
+        flex-direction: column;
+    }
+
+    .map__left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map__box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        padding-bottom: 50px;
+    }
+
+    .mint::after {
+        max-width: 425px;
+        width: 100%;
+    }
+    
+    .swiper-buttons {
+        margin: 40px auto 0;
+    }
+    
+    .mint {
+        background: none;
     }
 }
