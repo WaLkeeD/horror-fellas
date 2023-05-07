@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper", {
     // onlyInViewport: true,
     // pageUpDown: true,
   },
-  slidesPerView: 3,
+  // slidesPerView: 3,
   spaceBetween: 20,
 
   breakpoints: {
@@ -36,6 +36,7 @@ const swiper = new Swiper(".swiper", {
 
     1800: {
       slidesPerView: 5,
+      // slidesCentered: true,
     }
   },
 });
@@ -56,3 +57,13 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+const menu = document.querySelector('.header__menu');
+const list = document.querySelector('.header__nav-list')
+const body = document.querySelector('body')
+
+menu.addEventListener('click', function () {
+  menu.classList.toggle('active')
+  list.classList.toggle('active')
+  body.classList.toggle('active')
+})

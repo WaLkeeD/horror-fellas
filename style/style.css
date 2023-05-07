@@ -835,19 +835,11 @@ svg path {
 
 .accordion {
   background-color: #010101;
-  /* max-width: 540px;
-  width: 100%; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* gap: 35px; */
-
-  /* padding-bottom: 20px; */
-
   font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
-  /* line-height: 24px; */
   transition: 0.3s;
 
   border: 0px;
@@ -862,17 +854,13 @@ svg path {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  /* background-color: #fff; */
   color: red;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 
 .panel {
   padding: 0;
@@ -883,7 +871,6 @@ svg path {
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 17px;
-  /* line-height: 24px; */
   padding-left: 10px;
   padding-top: 5px;
 
@@ -893,7 +880,6 @@ svg path {
 
 .accordion:after {
   content: url(../icons/plus.svg);
-  /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
   float: right;
@@ -901,7 +887,6 @@ svg path {
 
 .active:after {
   content: "\2796";
-  /* Unicode character for "minus" sign (-) */
 }
 
 .screenshot {
@@ -940,7 +925,6 @@ svg path {
   font-weight: 700;
   font-size: 56px;
   line-height: 117.5%;
-  /* identical to box height, or 66px */
   text-align: center;
   margin-bottom: 40px;
 
@@ -1155,4 +1139,12 @@ svg path {
 
   opacity: 0.5;
   margin-bottom: 25px;
+}
+
+.header__menu {
+  display: none;
+}
+
+body.active {
+  overflow: hidden;
 }
