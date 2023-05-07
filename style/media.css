@@ -141,6 +141,10 @@
         align-items: center;
     }
 
+    .mint {
+        background: none;
+    }
+
     .mint__img {
         width: 80%;
     }
@@ -159,6 +163,20 @@
 
     .accordion {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    .red__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .red__info-box {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -206,7 +224,7 @@
         max-height: 340px;
         height: 100%;
         width: 100%;
-        top: 680px;
+        top: 770px;
         left: 0;
     }
 
@@ -239,8 +257,12 @@
     }
 
     .mint__block-text {
-        text-align: center;
+        text-align: left;
         margin-bottom: 40px;
+    }
+
+    .mint__img {
+        width: 100%;
     }
 
     .mint__info {
@@ -250,8 +272,17 @@
         flex-direction: column;
     }
 
+    .mint__block-content {
+        align-items: center;
+    }
+
+
+    .mint__block-title {
+        text-align: left;
+    }
+
     .slider {
-        margin-top: 1050px;
+        margin-top: 1175px;
     }
 
     .mint {
@@ -266,29 +297,26 @@
         max-width: 435px;
         width: 113%;
         height: 100%;
-        top: 1425px;
+        top: 1520px;
         left: 0px;
         z-index: -1;
     }
 
-    .red__container {
-        flex-direction: column;
-    }
 
-    .red__info-box {
-        justify-content: center;
-    }
+
+
 
     .fusion .container {
         flex-direction: column;
     }
 
     .red__info-box-content {
-        max-width: 160px;
+        max-width: 150px;
     }
 
     .red__info-box {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .red__number {
@@ -296,7 +324,7 @@
     }
 
     .red__info-box-text {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .fusion .container {
@@ -339,11 +367,11 @@
         max-width: 425px;
         width: 100%;
     }
-    
+
     .swiper-buttons {
         margin: 40px auto 0;
     }
-    
+
     .mint {
         background: none;
     }
