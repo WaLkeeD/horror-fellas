@@ -60,7 +60,7 @@
   }
 
   .mint__button {
-    padding: 15px 60px;
+    padding: 15px 75px;
   }
 
   .slider {
@@ -130,7 +130,7 @@
 
   .mint__block {
     flex-direction: column;
-    padding: 15px;
+    padding: 70px 40px;
   }
 
   .slider {
@@ -187,8 +187,6 @@
     cursor: pointer;
     z-index: 10;
   }
-  
-  
 
   .header__menu::before,
   .header__menu::after {
@@ -198,7 +196,7 @@
     position: absolute;
     right: 0;
     background-color: #fff;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .header__menu::before {
@@ -212,9 +210,9 @@
     position: absolute;
     top: 13px;
     background-color: #fff;
-    transition: .3s;
+    transition: 0.3s;
   }
-  
+
   .header__menu.active:before {
     transform: rotate(45deg);
     top: 13px;
@@ -223,7 +221,7 @@
     transform: rotate(-45deg);
     bottom: 13px;
   }
-  
+
   .header__menu.active:after {
     transform: scale(0);
   }

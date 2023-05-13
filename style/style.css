@@ -86,7 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   max-width: 1110px;
   width: 100%;
 }
@@ -183,7 +183,7 @@ body {
   border-radius: 11px;
 
   color: #ffffff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .header__intro-button:hover {
@@ -319,7 +319,7 @@ body {
 .mint__block-content-right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .mint__btn {
@@ -342,19 +342,30 @@ body {
   background-color: #fff;
 }
 
+.mint__button-box {
+  position: relative;
+  max-width: 200px;
+  z-index: 2;
+}
+
 .mint__button {
   font-family: "Hauora";
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
-
   color: #ffffff;
-
   background: #ce0101;
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 11.8246px;
-  padding: 15px 70px;
+  padding: 15px 74px;
   transition: 0.4s;
+}
+
+.mint__button-img {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  z-index: -1;
 }
 
 .mint__button:hover {
@@ -436,7 +447,7 @@ body {
 }
 
 svg path {
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .mint__socials a:hover svg path {
@@ -449,7 +460,6 @@ svg path {
 .slider {
   margin-bottom: 100px;
   transition: 0.4s;
-
 }
 
 .swiper {
@@ -476,9 +486,11 @@ svg path {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s;
+  transition: 0.3s;
   width: 20px;
   height: 20px;
+  
+  
 }
 
 .swiper-button-next {
@@ -490,9 +502,17 @@ svg path {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s;
+  transition: 0.3s;
   width: 20px;
   height: 20px;
+  
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-next::after {
+  display: none;
 }
 
 .swiper-button-prev:hover {
@@ -502,8 +522,6 @@ svg path {
   background-color: red;
 }
 
-
-
 .swiper-slide {
   /* padding: 50px; */
   padding-bottom: 20px;
@@ -512,7 +530,6 @@ svg path {
   max-height: 430px;
   display: flex;
   flex-direction: column;
-  
 
   background: linear-gradient(360deg, #171717 -2.58%, #010101 91.03%);
   border-radius: 12px;
@@ -561,8 +578,6 @@ svg path {
   text-align: center;
   color: #ffffff;
 }
-
-
 
 /* ****** RED ******* */
 
@@ -860,7 +875,6 @@ svg path {
 .accordion:hover {
   color: red;
 }
-
 
 .panel {
   padding: 0;
